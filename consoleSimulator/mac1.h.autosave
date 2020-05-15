@@ -1,0 +1,43 @@
+#ifndef MAC1_H
+#define MAC1_H
+
+#include <iostream>
+#include <string>
+
+#include "cell.h"
+
+using namespace std;
+
+
+class MAC1
+{
+private:
+    string IR = ""; // Instruction register
+    int PC = 0;     // Program counter
+    int SP = 0;     // Stack pointer
+    int AC = 0;     // Acumulator
+    // MAR - Memory Address Register
+    // MBR - Memory Buffer Register
+
+    int size = 160;
+    Cell *memory;
+
+
+public:
+
+    // - Constructors -
+    MAC1();
+
+    // - Destructor -
+    ~MAC1();
+
+    // - Get & Set -
+
+
+    // - Methods -
+    void print() const;
+
+
+};
+
+#endif // MAC1_H

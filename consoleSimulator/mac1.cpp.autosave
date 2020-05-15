@@ -1,0 +1,30 @@
+#include "mac1.h"
+
+MAC1::MAC1()
+{
+    memory = new Cell[size];
+}
+
+MAC1::~MAC1() {
+    delete[] memory;
+}
+
+
+
+
+// - Methods -------------------------------------------------------
+void MAC1::print() const {
+    int cellSize = 3;
+    int rows = 20;
+    int columns = size / rows;
+
+    // Print a line at the top
+    int lineLength = cellSize * columns;
+    cout << endl;
+    for (int i = 0; i < lineLength; i++)
+        cout << '-';
+
+
+    for ()
+
+}
